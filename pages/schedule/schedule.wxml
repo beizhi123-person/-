@@ -1,0 +1,37 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">2021-10-12</view>
+</cu-custom>
+
+
+<view class="cu-timeline">
+  <view class="cu-time">10-12</view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-green shadow-blur">
+      <text>22:22</text> 直接下班
+    </view>
+  </view>
+  
+  <view class="cu-item text-red cuIcon-attentionforbidfill">
+    <view class="content bg-red shadow-blur">
+     未完成上级xxx任务
+    </view>
+  </view>
+
+  <view class="cu-item text-grey cuIcon-evaluate_fill">
+    <view class="content bg-grey shadow-blur">
+        xxx安排的临时任务
+    </view>
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-blue content">
+      <text>20:00</text> 完成上级任务
+    </view>
+    <view class="bg-cyan content">
+      <text>10:00</text> 完成上级任务
+    </view>
+  </view>
+
+</view>
+
+

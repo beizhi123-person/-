@@ -1,0 +1,6 @@
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+
+.span{width: 100%;height: 30rpx;}
+page {background-color: rgb(226, 225, 225);} 
+.margin-left_kb{margin-left: 80rpx;}

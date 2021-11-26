@@ -1,0 +1,116 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">行政部-xxx</view>
+</cu-custom>
+
+<!-- 日历 -->
+<view class='wrap shadow-warp bg-white'>
+  <view>
+    <view class='date-show'>
+      <view class='lt-arrow' bindtap='lastMonth'>
+      </view>
+      {{year}}年{{month}}月
+      <view class='rt-arrow' bindtap='nextMonth'>
+      </view>
+    </view>
+  </view>
+  <view class='section'>
+    <view wx:for='{{date}}' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}' wx:key="key">{{item}}
+      <view></view>
+    </view>
+  </view>
+
+  <view class='date-box'>
+    <view wx:for='{{dateArr}}' class='{{isToday == item.isToday ? "nowDay" : ""}}' data-date='{{item.isToday}}'
+      wx:key="key">
+      <navigator url="/pages/schedule/schedule?date={{item.isToday}}" hover-class="none">
+        <view class='date-head'>
+          <view>{{item.dateNum}}</view>
+        </view>
+      </navigator>
+
+      <view class='date-weight'>{{item.weight}}</view>
+    </view>
+  </view>
+
+</view>
+
+<!-- 工作块 -->
+<view class="span"></view>
+<view class="header  shadow-warp bg-white padding-sm ">
+  <view class="header_tit text-lg margin-bottom">公告通知</view>
+  <view class="header_back flex text-bold text-black">
+    <view class="header_tit1">发布</view>
+    <view class="header_tit2">日期</view>
+    <view class="header_tit3" style="margin-left: 18rpx;">状态</view>
+    <view class="header_tit4">标题</view>
+  </view>
+  <view class=" flex text-black margin-top-sm">
+    <view class="header_tit1">陈总</view>
+    <view class="header_tit2">2021-01-20</view>
+    <view class="header_tit3">
+      <view class="header_tit5">一般</view>
+    </view>
+    <view class="header_tit4 text-cut">今天把全体员工团建，大家下班记得打扫卫生</view>
+  </view>
+  <view class=" flex text-black margin-top-sm">
+    <view class="header_tit1">陈总</view>
+    <view class="header_tit2">2021-01-20</view>
+    <view class="header_tit3">
+      <view class="header_tit5">一般</view>
+    </view>
+    <view class="header_tit4 text-cut">今天把全体员工团建，大家下班记得打扫卫生</view>
+  </view>
+  <view class=" flex text-black margin-top-sm">
+    <view class="header_tit1">陈总</view>
+    <view class="header_tit2">2021-01-20</view>
+    <view class="header_tit3">
+      <view class="header_tit5">一般</view>
+    </view>
+    <view class="header_tit4 text-cut">今天把全体员工团建，大家下班记得打扫卫生</view>
+  </view>
+  <view class=" flex text-black margin-top-sm">
+    <view class="header_tit1">陈总</view>
+    <view class="header_tit2">2021-01-20</view>
+    <view class="header_tit3">
+      <view class="header_tit5">一般</view>
+    </view>
+    <view class="header_tit4 text-cut">今天把全体员工团建，大家下班记得打扫卫生</view>
+  </view>
+</view>
+<view class="span"></view>
+
+<view class="header  shadow-warp bg-white padding-sm ">
+  <view class="header_tit text-lg margin-bottom">工作计划</view>
+  <view class="header_back flex text-bold text-black">
+    <view class="header_tit1">类型</view>
+    <view class="header_tit2">日期</view>
+    <view class="header_tit3" style="margin-left: 18rpx;">状态</view>
+    <view class="header_tit4">标题</view>
+  </view>
+  <view class=" flex text-black margin-top-sm">
+    <view class="header_tit1">日计划</view>
+    <view class="header_tit2">2021-01-20</view>
+    <view class="header_tit3">
+      <view class="header_tit5 red">未完成</view>
+    </view>
+    <view class="header_tit4 text-cut">今天把全体员工团建，大家下班记得打扫卫生</view>
+  </view>
+  <view class=" flex text-black margin-top-sm">
+    <view class="header_tit1">月计划</view>
+    <view class="header_tit2">2021-01-20</view>
+    <view class="header_tit3">
+      <view class="header_tit5 organge">进行中</view>
+    </view>
+    <view class="header_tit4 text-cut">今天把全体员工团建，大家下班记得打扫卫生</view>
+  </view>
+  <view class=" flex text-black margin-top-sm">
+    <view class="header_tit1">周计划</view>
+    <view class="header_tit2">2021-01-20</view>
+    <view class="header_tit3">
+      <view class="header_tit5 green">已完成</view>
+    </view>
+    <view class="header_tit4 text-cut">今天把全体员工团建，大家下班记得打扫卫生</view>
+  </view>
+</view>
+
+<view class="span"></view>

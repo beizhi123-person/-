@@ -1,0 +1,16 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">绑定手机号</view>
+</cu-custom>
+<view class="content">为了确保是公司人员需绑定手机号</view>
+<view style="margin-top: 24rpx;" class="cu-form-group">
+  <view class="title">手机号码</view>
+  <input placeholder="请授权手机号" disabled value="{{phone}}"></input>
+  <view class="cu-capsule radius">
+    <button class="cu-tag bg-blue" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">点击授权</button>
+    <view class="cu-tag line-blue">
+      +86中国大陆
+    </view>
+  </view>
+</view>
+
+<view class="margin-tb-sm text-center" bindtap="submit"><button style="width: 200rpx; margin-top: 20rpx;" class="cu-btn round bg-blue">提交</button></view>

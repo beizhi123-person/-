@@ -1,0 +1,40 @@
+<cu-custom bgColor="bg-blue">
+  <view slot="content">个人中心</view>
+</cu-custom>
+
+
+
+<view class="header bg-blue ">
+  <view class="main flex flex-wrap">
+    <view class="span"></view>
+    <view class="cu-avatar xl round margin-left_kb" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg);"></view>
+    <view class="span"></view>
+    <view class="header_tit">行政部-陈云哈哈</view>
+  </view>
+</view>
+<view class="span"></view>
+<view class="span"></view>
+<view class="section padding">
+
+  <view class="flex justify-between block solids-bottom">
+    <view class="text-black flex">
+      <view class="cuIcon-appreciatefill "></view>
+      <view class="block_tit">工作总结</view>
+    </view>
+    <view class="cuIcon-right"></view>
+  </view>
+  <view class="flex justify-between block solids-bottom">
+    <view class="text-black flex">
+      <view class="cuIcon-choicenessfill "></view>
+      <view class="block_tit">工作安排</view>
+    </view>
+    <view class="cuIcon-right"></view>
+  </view>
+  <view class="flex justify-between block solids-bottom">
+    <view class="text-black flex">
+      <view class="cuIcon-noticefill"></view>
+      <view class="block_tit">消息通知</view>
+    </view>
+    <view class="cuIcon-right"></view>
+  </view>
+</view>
